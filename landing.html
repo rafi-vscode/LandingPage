@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rafi Landing Page</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
@@ -15,7 +16,7 @@
     <audio autoplay loop>
       <source src="Somebody To You_1746019654_musicaldown.com.mp3" type="audio/mp3">
       Your browser does not support the audio element.
-  </audio>
+    </audio>
   
     <div class ="video-overvlay"></div>
     
@@ -25,10 +26,10 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -38,20 +39,53 @@
       <h1>MY<span>PORTOFOLIO</span></h1>
       <p id="typing-text"></p> <!-- Ubah p biasa jadi p dengan id supaya efek ketik -->
       
-      <div class="social-icons">
-        <a href="https://open.spotify.com/playlist/..."><img src="images/spotify.png" alt="Spotify" /></a>
-        <a href="https://www.instagram.com/invites/..."><img src="images/instagram.png" alt="Instagram" /></a>
-        <a href="https://www.fb.com/l/6lp1kJRRR"><img src="images/facebook.jpeg" alt="Facebook" /></a>
-        <a href="https://github.com/rafi-vscode?..."><img src="images/github.png" alt="GitHub" /></a>
-      </div>
+    <div class="social">
+      <a href="https://open.spotify.com/playlist/"><i class='bx bxl-spotify'></i></a>
+      <a href="https://www.instagram.com/invites/"><i class='bx bxl-instagram'></i></a>
+      <a href="https://github.com/rafi-vscode"><i class='bx bxl-github'></i></a>
+      <a href="https://www.fb.com/l/6lp1kJRRR"><i class='bx bxl-facebook'></i></a>
+    </div>
 
-      <a href="#" class="btn yellow">More Info</a>
+      <a href="https://samehadaku.mba/" class="btn yellow">Next Watch</a>
     </div>
 
     <div class="model-container">
         <model-viewer src="images/benimaru_shinmon.glb" camera-controls></model-viewer>
     </div>
   </section>
+
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>
+      Saya adalah seorang mahasiswa yang sedang belajar Web Development. Halaman ini saya buat sebagai bagian dari tugas Praktikum Pemrograman Web dengan mengusung tema Anime dan teknologi interaktif seperti background video serta model 3D.
+    </p>
+  </section>
+  
+  <section id="blog" class="blog-section">
+    <h2>My Blog</h2>
+    <div class="blog-posts">
+      <div class="post">
+        <h3>Coding dan Anime</h3>
+        <p>Menggabungkan semangat belajar coding dengan bermain itu menyenangkan. Salah satunya dengan desain seperti ini!</p>
+      </div>
+      <div class="post">
+        <h3>Progress Belajar</h3>
+        <p>Mulai dari dasar HTML dan CSS, lalu berlanjut ke JavaScript dan framework modern. Terus belajar setiap hari!</p>
+      </div>
+    </div>
+    <h3 style="margin-top: 40px;">Sertifikat Saya</h3>
+    <div class="certificates">
+      <img src="images/Rafi Rizky Santosa  Sertifikat Lomba Tata Tulis Karya Ilmiah-1_page_1.png" alt="Sertifikat Karya Ilmiah">
+      <img src="images/SERTIFIKAT APSI Juara 3 LKTI TIM LKTI Institut Teknologi Sains dan Kesehatan PKU Muhammadiyah Surakarta_page_1.png" alt="Sertifikat Juara 3 LKTI">
+    </div>
+  </section>
+  
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Silakan hubungi saya melalui media sosial atau email untuk diskusi, kerja sama, atau sekadar ngobrol!</p>
+    <p>Email: rafisantosa0028@gmail.com</p>
+  </section>
+  
 
   <script>
     const text = "Salam kenal semuanya, ini adalah Landing Page pertama saya, guna memenuhi tugas Praktikum Pemrograman Web yang sedang diajarkan. Don't forget follow and Subscribe media sosial di bawah ini yaa guysss... Thank You.";
