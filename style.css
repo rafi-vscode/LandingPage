@@ -192,8 +192,9 @@
   }
   
   model-viewer {
-    width: 100%;
+    width: 400px;        /* Ukuran tetap */
     height: 500px;
+    max-width: 100%;
   }
   
   .video-overlay {

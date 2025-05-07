@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../pemrograman web"
+		},
+		{
+			"path": "../Modul 1&2"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../PHP"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "LandingPage"
+	}
+}
